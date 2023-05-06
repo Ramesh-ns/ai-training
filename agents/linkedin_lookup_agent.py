@@ -10,7 +10,7 @@ import os
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 
-def lookup(name: str) -> str:
+def linkedin_lookup_agent(name: str) -> str:
     llm = ChatOpenAI(temperature=0, model_name="gpt-3.5-turbo")
 
     template = """given the full name {name_of_person} I want you to get it me a link to their Linkedin profile page.
