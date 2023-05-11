@@ -15,7 +15,7 @@ pinecone.init(
 if __name__ == "__main__":
     print("Hello VectorStore!")
     loader = TextLoader(
-        "/Users/ryenugula/PycharmProjects/ai-training/mediumblogs/mediumblog1.txt"
+        "/Users/ryenugula/PycharmProjects/ai-training/files/mediumblog1.txt"
     )
     document = loader.load()
 
